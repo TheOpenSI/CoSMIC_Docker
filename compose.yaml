@@ -1,0 +1,16 @@
+name: OpenSI-CoSMIC
+
+include:
+  - path: ../CoSMIC_DB/compose.yaml
+    project_directory: ../CoSMIC_DB/
+
+  - path: ../CoSMIC/compose.yaml
+    project_directory: ../CoSMIC/
+
+  - path: ../CoSMIC_UI/compose.yaml
+    project_directory: ../CoSMIC_UI/
+
+networks:
+  cosmic_net:
+    name: cosmic_net
+    driver: bridge
